@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
+    <link  href="http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope:regular&v1" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <?php echo $sf_content ?>
