@@ -11,5 +11,10 @@
   </head>
   <body>
     <?php echo $sf_content ?>
+    <!-- Footer Copyright -->
+    <div id="copyright">
+        <small>&#169; Copyright 2011 | Powered by <a href="http://www.webdevel.cl" class="copyright" target="_blank">WebDevel.cl</a></small>
+    </div>
+    <!-- END Footer Copyright -->
   </body>
 </html>

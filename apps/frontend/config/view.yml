@@ -17,7 +17,6 @@ default:
   javascripts:
     - jquery-1.6.1.min.js
     - jquery.scrollTo.js
-    - jquery.nav.min.js
     - tools.js
 
   has_layout:     true
