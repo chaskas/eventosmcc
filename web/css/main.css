@@ -57,6 +57,25 @@ div.body-wrapper {
   right: 0;
   position: absolute;
 }
+p#text1-services {
+  width: 300px;
+}
+img#services {
+  margin-top: 100px;
+}
+#text1-services-wrapper {
+  padding: 10px 20px;
+  margin: 10px;
+  float: left;
+  width: 450px;
+  height: 350px;
+}
+#text2-services-wrapper {
+  padding: 10px 20px;
+  margin: 10px;
+  float: right;
+  width: 400px;
+}
 #contact-content {
   min-height: 400px;
   width: 950px;

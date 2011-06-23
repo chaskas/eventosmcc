@@ -33,8 +33,14 @@
         <li><a href="javascript:$.scrollTo('#contact',750);"  class="super button pink">Cont&aacute;ctanos</a></li>
       </ul>
     </div>
-    <div class="body-wrapper">
-
+    <div id="services-content" class="body-wrapper">
+      <div id="text1-services-wrapper" class="alpha60 rounded-corners">
+        <p id="text1-services">Con la idea de satisfacer las necesidades de los papás, ofrecemos la organización de cumpleaños a domicilio o en nuestras dependencias; para que ese día tan especial de sus pequeños, se preocupen sólo de llegar a disfrutar con ellos. Es por esto que destinamos los siguientes servicios: </p>
+      </div>
+      <?php echo image_tag('services-img.png','id=services'); ?>
+      <div id="text2-services-wrapper" class="alpha60 rounded-corners">
+        <p>Servicio personalizado para organizar según preferencias y necesidades, el cumpleaños de los pequeños y pequeñas que quieran tener un día inolvidable, ya sea en el jardín o a domicilio.</p>
+      </div>
     </div>
   </div>
 </div>
