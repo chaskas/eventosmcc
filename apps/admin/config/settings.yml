@@ -3,7 +3,7 @@
 
 prod:
   .settings:
-    no_script_name:         true
+    no_script_name:         false
     logging_enabled:        false
 
 dev:
@@ -25,14 +25,24 @@ test:
 all:
   .settings:
     # Form security secret (CSRF protection)
-    csrf_secret:            be5e9f6ca37958ab23824f60c82073e227f9c669
-
+    csrf_secret:            7d2a21c3dfb0b2502576a93c2a919cbb392cc3ed
+    
+    #Locales
+    charset: utf-8
+    i18n:  true
+    default_culture:  es_ES
+    
     # Output escaping settings
     escaping_strategy:      true
     escaping_method:        ESC_SPECIALCHARS
-    
-    enabled_modules:      [default, portfolio]
 
     # Enable the database manager
     use_database:           true
 
+    enabled_modules:      [default, gallery, sfGuardAuth]
+    
+    login_module:           sfGuardAuth
+    login_action:           signin
+
+    secure_module:          sfGuardAuth
+    secure_action:          secure

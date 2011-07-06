@@ -247,7 +247,7 @@ table {
 }
 .album-view-container {
   float: left;
-  margin: 10px 20px;
+  margin: 10px 15px;
   text-align: center;
   width: 230px;
   height: 220px;
@@ -256,7 +256,7 @@ table {
   -moz-box-shadow: 0 0 5px #888;
   -webkit-box-shadow: 0 0 5px#888;
   box-shadow: 0 0 5px #888;
-  padding: 20px 15px;
+  padding: 20px 10px;
 }
 .album-frame {
   margin: 5px;
