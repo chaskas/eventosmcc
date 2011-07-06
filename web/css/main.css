@@ -59,16 +59,22 @@ div.body-wrapper {
 }
 p#text1-services {
   width: 300px;
+  float: left;
+}
+ul#ul1-services {
+  float: right;
 }
 img#services {
-  margin-top: 100px;
+  margin-top: 0px;
+  float: left;
+  z-index: 99;
 }
 #text1-services-wrapper {
   padding: 10px 20px;
   margin: 10px;
   float: left;
-  width: 450px;
-  height: 350px;
+  width: 850px;
+  height: 300px;
 }
 #text2-services-wrapper {
   padding: 10px 20px;
@@ -99,7 +105,11 @@ li {
   padding-bottom:10px;
   float: left;
   margin: 20px 10px;
-}	
+}
+li.list-services {
+  margin: 0;
+  padding: 10px;
+}
 .button, .button:visited {
   background: #222 url(overlay.png) repeat-x; 
   display: inline-block; 
@@ -160,6 +170,7 @@ li {
   -moz-box-shadow: 0 0 5px #888;
   -webkit-box-shadow: 0 0 5px#888;
   box-shadow: 0 0 5px #888;
+  float: left;
 }
 
 #copyright {
@@ -168,3 +179,96 @@ li {
   font-size: 9pt;
   color: #191919;
 }
+
+#contact-form {
+  float: left;
+  width: 450px;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-form-input {
+  background: none repeat scroll 0 0 #FFFFFF; /*#63A9FF*/
+  border: 1px solid #E5E5E5;
+  border-radius: 5px 5px 5px 5px;
+  color: #63A9FF;
+  font: bold 13px/100% Verdana,Tahoma,sans-serif;
+  outline: 0 none;
+  padding: 9px;
+  width: 400px;
+}
+
+#form-submit {
+  background: none repeat scroll 0 0 #63A9FF;
+  border: 1px solid;
+  border-radius: 5px 5px 5px 5px;
+  color: #FFFFFF;
+  float: right;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 #9ABDFD;
+  margin-right: 18px;
+  margin-top: 20px;
+}
+.contact-form-input-area {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 5px 5px 5px 5px;
+    color: #63A9FF;
+    font: bold 13px/100% Verdana,Tahoma,sans-serif;
+    height: 150px;
+    outline: 0 none;
+    padding: 9px;
+    width: 400px;
+}
+
+#sf_admin_bar {
+  display: none;
+}
+#sf_admin_container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 30px;
+}
+#sf_admin_content {
+  width: 100%;
+}
+.sf_admin_list {
+  width: 100%;
+}
+table {
+  width: 100%;
+}
+
+#gallery-wrapper {
+  clear: both;
+  margin: 15px auto;
+  padding: 30px
+}
+.album-view-container {
+  float: left;
+  margin: 10px 20px;
+  text-align: center;
+  width: 230px;
+  height: 220px;
+  position: relative;
+  border: 5px #FFFFFF solid;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+  padding: 20px 15px;
+}
+.album-frame {
+  margin: 5px;
+  padding: 8px;
+}
+.cb {
+  clear: both;
+}
+.content-title {
+  color: #FFFFFF;
+  font-size: 36pt;
+  font-weight: bold;
+  margin: 20px;
+}
+.gallery-title { font-size: 34px; margin: 30px}

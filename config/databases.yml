@@ -7,4 +7,4 @@ all:
     param:
       dsn:      mysql:host=localhost;dbname=eventos
       username: root
-      password: 
+      password: lagoranco1809
