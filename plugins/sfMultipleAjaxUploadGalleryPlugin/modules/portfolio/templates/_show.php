@@ -12,7 +12,7 @@
   <a href="<?php echo $correctPath.$gallery->getId()."/450/".$photo->getPicPath() ?>">
   <img title="<?php echo $photo->getTitle() ?>"
        alt="<?php echo $photo->getTitle() ?>"
-       src="<?php echo $correctPath.$gallery->getId()."/".sfConfig::get("app_sfMultipleAjaxUploadGalleryPlugin_portfolio_thumbnails_size")."/".$photo->getPicPath() ?>"/>
+       src="<?php echo $correctPath.$gallery->getId()."/450/".$photo->getPicPath() ?>"/>
   </a>
 <?php } ?>
 </div>

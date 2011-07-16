@@ -35,7 +35,8 @@ class staticActions extends sfActions
 
     $mensaje = Swift_Message::newInstance()
       ->setFrom($email)
-      ->setTo('admin@mundocantaclaro.cl') //CAMBIAR AL CORREO DE DESTINO DEFINITIVO
+      //->setTo(array('admin@mundocantaclaro.cl','eventos@mundocantaclaro.cl')) //CAMBIAR AL CORREO DE DESTINO DEFINITIVO
+      ->setTo(array('admin@mundocantaclaro.cl'))
       ->setSubject('Nuevo mensaje desde www.mundocantaclaro.cl')
       ->setBody($message)
     ;

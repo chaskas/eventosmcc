@@ -13,10 +13,15 @@
     </div>
     <div id="home-content" class="body-wrapper">
       <div id="text1-index-wrapper" class="alpha60 rounded-corners">
-        <p>Eventos Infantiles Mundo Cantaclaro les da la bienvenida a nuestro sitio donde podrán conocer los servicios que ofrecemos y que necesitan para la celebración del cumpleaños de sus hijos/as.</p>
+      <div> 
+       <p>Con la idea de satisfacer las necesidades de los papás, ofrecemos la organización de cumpleaños a domicilio o en nuestras dependencias; para que ese día tan especial de sus pequeños, se preocupen sólo de llegar a disfrutar con ellos...  Puedes enviarnos un correo y te enviaremos una cotización acorde a tus necesidades y las de tu hijo...</p>
       </div>
+      </div>
+      <?php echo image_tag('services-img.png','id=imgservices'); ?>
       <div id="text2-index-wrapper" class="alpha60 rounded-corners">
-        <p>Nuestra Misión es producir cumpleaños infantiles a través de un servicio integral desde la organización hasta el final del evento, haciendo que los niños pasen un día inolvidable y divertido otorgándole también comodidad a los papás.</p>
+      <div> 
+       <p>Nuestra Misión es producir cumpleaños infantiles a través de un servicio integral desde la organización hasta el final del evento, haciendo que los niños pasen un día inolvidable y divertido otorgándole también comodidad a los papás.</p>
+      </div>
       </div>
     </div>
   </div>
@@ -36,33 +41,36 @@
     </div>
     <div id="services-content" class="body-wrapper">
       <div id="text1-services-wrapper" class="alpha60 rounded-corners">
-        <p>Con la idea de satisfacer las necesidades de los papás, ofrecemos la organización de cumpleaños a domicilio o en nuestras dependencias; para que ese día tan especial de sus pequeños, se preocupen sólo de llegar a disfrutar con ellos. Es por esto que destinamos los siguientes servicios: </p>
+      <div>
+        <p>Contamos con los siguientes servicios:</p>
         <ul>
-          <li class="list-services">Animación Tony Panqueque<br/>
-              Divierte con muchos concursos<br/>
-              Música,
-              Pintacaritas,
-              cuenta cuentos,
-              Cama elástica
+          <li class="list-services">
+            Animaci&oacute;n de Tony Panqueque (concursos, m&uacute;sica, premios, pintacaritas, cuentacuentos y otros)
           </li>
-          <li class="list-services">Decoración<br/>
-              Globos,
-              Mesas,
-              Platos,
-              Fuente de chocolate,
+          <li class="list-services">
+            Cama el&aacute;stica
           </li>
-          <li class="list-services">...Próximamente disfraces y un Salón de eventos más grande<br/>
-              ...Próximamente Disco peques<br/>
+          <li class="list-services">
+            Fuente de Chocolate
           </li>
-          <li class="list-services">Servicio de confites y torta</li>
-<!--          <li class="list-services">Servicio personalizado para organizar según preferencias y necesidades, el cumpleaños de los pequeños y pequeñas que quieran tener un día inolvidable, ya sea en el jardín o a domicilio.</li>-->
+          <li class="list-services">
+            Servicio de Decoraci&oacute;n (globos, mesas, platos, vasos, entorno)
+          </li>
+          <li class="list-services">
+            Servicio de confiter&iacute;a (dulces, picadillos salados y dulces, bebidas, torta, etc)
+          </li>
         </ul>
-        
+
+       </div>
       </div>
-      <?php echo image_tag('services-img.png','id=services'); ?>
       <div id="text2-services-wrapper" class="alpha60 rounded-corners">
-        <p>Servicio personalizado para organizar según preferencias y necesidades, el cumpleaños de los pequeños y pequeñas que quieran tener un día inolvidable, ya sea en el jardín o a domicilio.</p>
+      <div>
+        <p>
+          Pr&oacute;ximamente...<br/>Disfraces<br/>Patio de eventos m&aacute;s amplio y<br/>Disco peques para los m&aacute;s lolos que cumplen m&aacute;s añitos.
+        </p>
       </div>
+      </div>
+      <?php echo image_tag('servicios.png','id=photoservices'); ?>
     </div>
   </div>
 </div>
@@ -103,6 +111,7 @@
       <!-- Form Contact -->
       <div id="sendmail"></div>
       <div id="contact-form" class="alpha60 rounded-corners">
+      <div>
         <form action="<?php echo url_for('static/sendmail') ?>" id="form-send" method="POST" autocomplete="off">
           <p><?php echo $form['name']->renderLabel('Tu Nombre',array('class'=>'contact-form-label')); ?></p>
           <p><?php echo $form['name']->render(); ?></p>
@@ -116,7 +125,18 @@
           <?php echo $form->renderHiddenFields(); ?>
         </form>
       </div>
+      </div>
       <!-- END Form Contact -->
+      <div id="direccion" class="alpha60 rounded-corners">
+        <div>
+          Mundo Cantaclaro<br/>
+          Cochrane #870<br/>
+          Concepci&oacute;n<br/>
+          Fonos: 99818065 &oacute; 79686423<br/>
+          eventos@mundocantaclaro.cl <?php echo link_to(image_tag('facebook-icon-48x48.png',array('alt' => 'Encuentranos en Facebook', 'size' => '48x48', 'class' => 'facebook','border'=> '0')),'http://www.facebook.com/mundo.cantaclaro',array('target'=>'_blank')); ?>
+        </div>
+      </div>
+      
       <div class="alpha60 rounded-corners map-padd">
         <div id="map_canvas"></div>
       </div>
